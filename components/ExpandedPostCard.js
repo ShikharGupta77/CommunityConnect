@@ -4,6 +4,7 @@ import { Card, ListItem, Button, Icon } from "react-native-elements";
 import * as Linking from "expo-linking";
 import { Alert } from "react-native";
 
+// The component for when you click the i button on a card
 export default function ExpandedPostCard({ route, navigation }) {
     function callPeople() {
         Linking.openURL("tel:" + route.params.phone);

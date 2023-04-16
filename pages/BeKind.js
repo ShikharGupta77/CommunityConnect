@@ -1,3 +1,8 @@
+/*
+This document creates the layout for BeKind. It handles the functionality
+for the like button and lays out all components of each BeKind Page. It also
+styles them appropriately.
+*/
 import {
     ScrollView,
     Text,

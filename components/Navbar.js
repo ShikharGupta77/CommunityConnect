@@ -6,6 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 import { auth } from "../lib/firebase";
 import { useEffect, useState } from "react";
 
+// Navbar component
 export default function Navbar({ navigation }) {
     const [loggedIn, setLoggedIn] = useState(true);
     useEffect(() => {

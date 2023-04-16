@@ -1,3 +1,7 @@
+/*
+This document loads the feed for BeKind and implements scrolling functionality.
+It passes in the appropriate variables to the BeKind page.
+*/
 import {
     ScrollView,
     Text,

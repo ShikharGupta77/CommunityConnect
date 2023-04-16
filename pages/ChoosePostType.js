@@ -1,3 +1,8 @@
+/*
+This document loads the page that allows users to decide
+whether they want to upload a BeKind post or a shared resource post.
+It defines the appropriate buttons and styles them.
+*/
 import { Text, View, Button } from "react-native";
 import PostTypeCard from "../components/PostTypeCard";
 import Navbar from "../components/Navbar";

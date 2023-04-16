@@ -1,3 +1,5 @@
+// This component is a for the conditional rendering of the Camera Selection page.
+
 import {
     Text,
     View,
@@ -35,12 +37,14 @@ export default function AddImage({ route, navigation }) {
     const [postTitle, setPostTitle] = useState("");
     const [postDesc, setPostDesc] = useState("");
 
+    // Changes the camera type in the app
     function toggleCameraType() {
         setType((current) =>
             current === CameraType.back ? CameraType.front : CameraType.back
         );
     }
 
+    // Function to take a picture
     function takePicture() {
         camera.current.pausePreview();
         camera.current.takePictureAsync({
@@ -52,6 +56,7 @@ export default function AddImage({ route, navigation }) {
         });
     }
 
+    // Uploads image to firebase backend
     async function uploadImage(type) {
         const docSnap = collection(db, "users", "testUser", type);
         const snap = await getCountFromServer(docSnap);

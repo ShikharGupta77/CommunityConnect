@@ -12,6 +12,7 @@ import { Ionicons } from "@expo/vector-icons";
 
 import axios from "axios";
 
+// An image scanner for the camera
 export default function ImageScanner({ navigation }) {
     const [type, setType] = useState(CameraType.back);
     const [permission, requestPermission] = Camera.useCameraPermissions();

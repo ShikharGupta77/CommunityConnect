@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import Navbar from "./Navbar";
 
+// A type of post card
 export default function PostTypeCard(props) {
     return (
         <>

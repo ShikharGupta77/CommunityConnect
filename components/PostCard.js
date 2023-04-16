@@ -6,6 +6,7 @@ import { Alert } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import Navbar from "./Navbar";
 
+// A card to see posts
 export default function PostCard(props) {
     const navigation = useNavigation();
     function callPeople() {

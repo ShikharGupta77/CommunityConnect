@@ -16,6 +16,7 @@ import Home from "./pages/Home";
 import { NativeBaseProvider } from "native-base";
 const Stack = createNativeStackNavigator();
 
+// This component stores the main app, configured to work with the NavigationContainer in React Native
 export default function App() {
     return (
         <NavigationContainer>
